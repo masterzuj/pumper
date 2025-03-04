@@ -35,7 +35,7 @@ Ausgabe zum Ducken:
     [2, 1, "Schultern", "Schulterpresse enger Griff (Maschine)"],
     [2, 2, "Schultern", "Frontheben über Kopf (Scheibe)"],
     [2, 3, "Schultern", "Frontheben (Kabelturm)"],
+    ...
 
-...
 
 HAVE FUN!
