@@ -36,5 +36,13 @@ const myPumpArray = [
     [6, 1, "Bauch", "Crunches (Bank)"],
     [6, 2, "Bauch", "Beinheben (Kabelturm)"],
     [6, 3, "Bauch", "Russian Twist (Kurzhantel)"],
-    [6, 4, "Bauch", "Planks (Bank)"]
+    [6, 4, "Bauch", "Planks (Bank)"],
+
+    //Cardio 7
+    [7, 1, "Cardio", "Laufband"],
+    [7, 2, "Cardio", "Fahrrad"],
+    [7, 3, "Cardio", "Rudergerät"],
+    [7, 4, "Cardio", "Stepper"],
+    
+
 ];

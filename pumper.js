@@ -13,30 +13,7 @@ const myPumpArray = [
     [2, 1, "Schultern", "Schulterpresse enger Griff (Maschine)"],
     [2, 2, "Schultern", "Frontheben über Kopf (Scheibe)"],
     [2, 3, "Schultern", "Frontheben (Kabelturm)"],
-
-    //Brust 3
-    [3, 1, "Brust", "Bankdrücken (Langhantel)"],
-    [3, 2, "Brust", "Schrägbankdrücken (Langhantel)"],
-    [3, 3, "Brust", "Fliegende (Kabelturm)"],
-    [3, 4, "Brust", "Butterfly (Maschine)"],
-
-    //Beine 4
-    [4, 1, "Beine", "Beinpresse (Maschine)"],
-    [4, 2, "Beine", "Beinstrecker (Maschine)"],
-    [4, 3, "Beine", "Beinbeuger (Maschine)"],
-    [4, 4, "Beine", "Wadenheben (Maschine)"],
-
-    //Arme 5
-    [5, 1, "Arme", "Bizepscurls (Langhantel)"],
-    [5, 2, "Arme", "Trizepsdrücken (Kabelturm)"],
-    [5, 3, "Arme", "Trizepsdrücken (Maschine)"],
-    [5, 4, "Arme", "Bizepscurls (Kabelturm)"],
-
-    //Bauch 6
-    [6, 1, "Bauch", "Crunches (Bank)"],
-    [6, 2, "Bauch", "Beinheben (Kabelturm)"],
-    [6, 3, "Bauch", "Russian Twist (Kurzhantel)"],
-    [6, 4, "Bauch", "Planks (Bank)"]
+...
 ];
 */
 const uebungenDiv = document.getElementById('uebungen');
@@ -129,3 +106,21 @@ generateButton.addEventListener('click', () => {
 
 
 document.getElementById('datum').innerText = new Date().toLocaleDateString('de-DE');
+
+$('#extra_ok').click(function() {
+    const extraInputValue = $("#extra_input").val();
+    if (extraInputValue) {
+        myPumpArray.push([0, myPumpArray.length + 1, "Extra", extraInputValue]);
+        const uebungElement = document.createElement('div');
+        uebungElement.textContent = `Extra: ${extraInputValue}`;
+        
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.addEventListener('change', () => {
+            uebungElement.style.textDecoration = checkbox.checked ? 'underline' : 'none';
+        });
+
+        uebungElement.insertBefore(checkbox, uebungElement.firstChild);
+        $('#uebungen').append(uebungElement);
+    }
+});
