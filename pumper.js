@@ -1,5 +1,7 @@
 
 //Übungsnamen/Arten
+
+/* moved to exercises.js
 const myPumpArray = [
     //Rücken 1
     [1, 1, "Ruecken", "Rudern vorgebeugt (Maschine)"],
@@ -36,7 +38,7 @@ const myPumpArray = [
     [6, 3, "Bauch", "Russian Twist (Kurzhantel)"],
     [6, 4, "Bauch", "Planks (Bank)"]
 ];
-
+*/
 const uebungenDiv = document.getElementById('uebungen');
 myPumpArray.forEach(uebung => {
     const uebungElement = document.createElement('div');
@@ -100,8 +102,8 @@ generateButton.addEventListener('click', () => {
     const printButton = document.getElementById('print');
     printButton.addEventListener('click', () => {
         const printContents = document.getElementById('paper').innerHTML;
-        const printWindow = window.open('', '', 'height=600,width=800');
-        printWindow.document.write('<html><head><title>Print</title>');
+        const printWindow = window.open('', '', 'height=1500,width=1000');
+        printWindow.document.write("<html><head><title>Training</title><style>body{font-family: 'Courier New', Courier, monospace; font-size: 18px;}</style>");
         printWindow.document.write('</head><body>');
         printWindow.document.write(printContents);
         printWindow.document.write('</body></html>');
@@ -126,3 +128,4 @@ generateButton.addEventListener('click', () => {
     });
 
 
+document.getElementById('datum').innerText = new Date().toLocaleDateString('de-DE');
