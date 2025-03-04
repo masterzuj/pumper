@@ -15,13 +15,13 @@ Ausgabe zum Ducken:
 ![pumper3](https://github.com/user-attachments/assets/d9fccecb-172d-4aa6-a69d-cbbe4835a305)
 
 
-Übungsauswahl vor eingerichtet.
+Übungsauswahl voreingerichtet.
 
 Übungsauswahl einfach anpassbar:
 
-Öffnen Sie exercises.js
+• Öffnen Sie exercises.js
 
-Übungen nach folgendem Muster im Array anpassen
+• Übungen nach folgendem Muster im Array anpassen
 
 
     const myPumpArray = [
