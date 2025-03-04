@@ -3,4 +3,4 @@
 
 Erstellen Sie Trainingspläne im Handumdrehen:
 
-git clone https://github.com/masterzuj/pumper
+git clone https://github.com/masterzuj/pumper.git
