@@ -6,6 +6,9 @@ Erstellen Sie Trainingspläne im Handumdrehen:
 
     git clone https://github.com/masterzuj/pumper.git
 
+Öffnen Sie: 
+    index.html
+
 Übungen Auswählen. Versuchen Sie im Trainingsplan die richtige Reinfolge durch KLICKEN UND ZIEHEN zu erreichen.
 
 ![pumper2](https://github.com/user-attachments/assets/2182f3d8-0329-497a-8619-04d6add14383)
