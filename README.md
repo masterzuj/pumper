@@ -24,7 +24,7 @@ Ausgabe zum Ducken:
 Übungen nach folgendem Muster im Array anpassen
 
 
-const myPumpArray = [
+    const myPumpArray = [
     //Rücken 1
     [1, 1, "Ruecken", "Rudern vorgebeugt (Maschine)"],
     [1, 2, "Ruecken", "Rudern von oben (Maschine)"],
