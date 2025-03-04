@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pumper</title>
+
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        input, button, select {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #generate {
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+    
+<button id="generate">GENERATE THE PLAN</button>
+
+<table>
+    <tr>
+        <td>Tage:
+        
+        
+
+
+        </td>
+    <td>
+        <select id="days">
+    <option value="1">Tag 1</option>
+    <option value="2">Tag 2</option>
+    <option value="3">Tag 3</option>
+    <option value="4">Tag 4</option>
+    <option value="5">Tag 5</option>
+    <option value="6">Tag 6</option>
+    <option value="7">Tag 7</option>
+</select>
+</td>
+    </tr>
+    <tr>
+        <td>Name:</td>
+        <td><input type="text" id="namenachname" placeholder="Name Nachname"/></td>
+    </tr>
+    <tr>
+        <td>Wiederholungen:</td>
+        <td><input type="text" id="wiederholungen" placeholder="15, 12, 8"/></td>
+    </tr>
+</table>
+
+
+<div id="uebungen"></div>
+
+
+<br/>
+<button id="print">Print</button><br/>
+<div id="paper" style="font-size: 20px; font-family: 'Courier New', Courier, monospace;">
+    <p>Trainingsplan</p>
+    <div id="name"></div><br/>
+    <div id="wiederholungen_div"></div><br/>
+    <div id="training"></div>
+
+</div>
+
+
+<script src="./pumper.js"></script>
+
+</body>
+</html>
