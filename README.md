@@ -8,7 +8,7 @@ Erstellen Sie Trainingspläne im Handumdrehen:
 
 Öffnen Sie: 
 
-    index.html
+    ./pumper/index.html
 
 Übungen Auswählen. Versuchen Sie im Trainingsplan die richtige Reinfolge durch KLICKEN UND ZIEHEN zu erreichen.
 
