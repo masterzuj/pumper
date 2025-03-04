@@ -96,14 +96,17 @@ generateButton.addEventListener('click', () => {
     $( "#training" ).sortable();
 
 
+
     const printButton = document.getElementById('print');
     printButton.addEventListener('click', () => {
         const printContents = document.getElementById('paper').innerHTML;
-        const originalContents = document.body.innerHTML;
-
-        document.body.innerHTML = printContents;
-        window.print();
-        document.body.innerHTML = originalContents;
+        const printWindow = window.open('', '', 'height=600,width=800');
+        printWindow.document.write('<html><head><title>Print</title>');
+        printWindow.document.write('</head><body>');
+        printWindow.document.write(printContents);
+        printWindow.document.write('</body></html>');
+        printWindow.document.close();
+        printWindow.print();
     });
 
   
