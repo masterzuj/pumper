@@ -57,19 +57,7 @@ myPumpArray.forEach(uebung => {
 
 const generateButton = document.getElementById('generate');
 
-/*
-const daysSelect = document.getElementById('days');
-    daysSelect.addEventListener('change', () => {
-        const days = parseInt(daysSelect.value, 10);
-        const trainingDiv = document.getElementById('training');
-        //trainingDiv.innerHTML = ''; // Clear previous content
 
-        for (let i = 1; i <= days; i++) {
-            const dayElement = document.createElement('div');
-            dayElement.textContent = `TAG${i}`;
-            trainingDiv.appendChild(dayElement);
-        }
-    });*/
 
     const daysSelect = document.getElementById('days');
 
@@ -135,18 +123,3 @@ generateButton.addEventListener('click', () => {
     });
 
 
-
-/*
-    const daysSelect = document.getElementById('days');
-    daysSelect.addEventListener('change', () => {
-        const days = parseInt(daysSelect.value, 10);
-        const trainingDiv = document.getElementById('training');
-        //trainingDiv.innerHTML = ''; // Clear previous content
-
-        for (let i = 1; i <= days; i++) {
-            const dayElement = document.createElement('div');
-            dayElement.textContent = `TAG${i}`;
-            trainingDiv.appendChild(dayElement);
-        }
-    });
-*/
