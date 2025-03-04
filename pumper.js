@@ -58,7 +58,9 @@ generateButton.addEventListener('click', () => {
     for (let i = 1; i <= days; i++) {
         const dayElement = document.createElement('div');
         dayElement.textContent = `TAG${i}`;
-        console.log(`TAG${i}`);
+        dayElement.style.marginTop = '20px';
+        dayElement.style.marginBottom = '20px'; 
+        dayElement.style.fontSize = '27px';
         trainingDiv.appendChild(dayElement);
     }
 
@@ -66,7 +68,8 @@ generateButton.addEventListener('click', () => {
 
     selectedExercises.forEach(exercise => {
         const exerciseElement = document.createElement('div');
-        exerciseElement.textContent = ` ◦ ${exercise[2]}: ${exercise[3]}; ___________kg`;
+        exerciseElement.style.marginLeft = '20px';
+        exerciseElement.textContent = ` ◦ ${exercise[2]}: ${exercise[3]}; _______kg`;
         trainingDiv.appendChild(exerciseElement);
     });
 });
@@ -121,6 +124,9 @@ $('#extra_ok').click(function() {
         });
 
         uebungElement.insertBefore(checkbox, uebungElement.firstChild);
+
         $('#uebungen').append(uebungElement);
+
+        $('#uebungen').scrollTop($('#uebungen')[0].scrollHeight);
     }
 });
