@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktuelles Datum</title>
+    <style>
+    body {
+        font-family: "Courier New", Courier, monospace;
+        background-color: white;
+        color: green;
+        font-size: 200px;
+    }
+    </style>
+</head>
+<body>
+    <center><div id="pumper"></div></center>
+
+    <script>
+    const text = " > PUMPER <";
+    const pumperDiv = document.getElementById("pumper");
+    let index = 0;
+
+    function typeWriter() {
+        if (index < text.length) {
+            pumperDiv.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 300);
+        } else {
+            setTimeout(() => {
+                pumperDiv.style.transition = "opacity 2s";
+                pumperDiv.style.opacity = 0;
+            }, 1000);
+            setTimeout(() => {
+                window.location.href = "./pumper.html";
+            }, 3000);
+        }
+    }
+
+    pumperDiv.innerHTML = "";
+    typeWriter();
+    </script>
+</body>
+</html>
