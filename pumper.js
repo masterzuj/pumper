@@ -91,6 +91,13 @@ generateButton.addEventListener('click', () => {
         printWindow.print();
     });
 
+    const emailButton = document.getElementById('email');
+    emailButton.addEventListener('click', () => {
+        const emailContent = document.getElementById('paper').innerText;
+        const mailtoLink = `mailto:?subject=Training&body=${encodeURIComponent(emailContent)}`;
+        window.location.href = mailtoLink;
+    });
+
   
 
     const nameInput = document.getElementById('namenachname');
